@@ -75,5 +75,16 @@
         },
       },
     });
+
+    // Mobile menu start
+    $('header .main-header .header-flex .main-header-items').meanmenu();
+
+    $(document).on('click', '#header-bar', function () {
+      $(this).toggleClass('active');
+
+      $('#targetElement').slideToggle(600);
+    });
+
+    // Mobile menu ends
   });
 })(jQuery);
