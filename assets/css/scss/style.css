@@ -153,6 +153,7 @@ header .main-header.sticky .header-flex .logo-box img {
 .sidebar-area {
   padding: 0px 0px;
   position: absolute;
+  width: 100%;
 }
 .sidebar-area .mean-container .mean-bar {
   background: transparent !important;
