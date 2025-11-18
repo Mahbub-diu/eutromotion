@@ -28,11 +28,13 @@ header {
       justify-content: space-between;
       .logo-box {
         width: 280px;
+        @include transistion-four;
         @include breakpoint(max-lg) {
           width: 180px;
         }
         img {
           max-width: 100%;
+          @include transistion-four;
         }
       }
       .main-header-items {
@@ -66,11 +68,7 @@ header {
           margin-bottom: 5px;
           @include transistion-four;
         }
-        // &:hover {
-        //   span {
-        //     background: $logo-red;
-        //   }
-        // }
+
         &.active {
           span {
             background: $logo-red;
@@ -94,6 +92,24 @@ header {
               -ms-transform: rotate(-45deg) translate(3px, -10px);
               -o-transform: rotate(-45deg) translate(3px, -10px);
             }
+          }
+        }
+      }
+    }
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      .header-flex {
+        .logo-box {
+          width: 220px;
+          @include breakpoint(max-lg) {
+            width: 160px;
+          }
+          img {
+            max-width: 100%;
           }
         }
       }

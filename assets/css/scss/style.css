@@ -53,6 +53,11 @@ header .main-header .header-flex {
 }
 header .main-header .header-flex .logo-box {
   width: 280px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 @media (max-width: 991px) {
   header .main-header .header-flex .logo-box {
@@ -61,6 +66,11 @@ header .main-header .header-flex .logo-box {
 }
 header .main-header .header-flex .logo-box img {
   max-width: 100%;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 header .main-header .header-flex .main-header-items ul {
   display: none;
@@ -120,6 +130,24 @@ header .main-header .header-flex .header-bar.active span:nth-child(3) {
   -moz-transform: rotate(-45deg) translate(3px, -10px);
   -ms-transform: rotate(-45deg) translate(3px, -10px);
   -o-transform: rotate(-45deg) translate(3px, -10px);
+}
+header .main-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+header .main-header.sticky .header-flex .logo-box {
+  width: 220px;
+}
+@media (max-width: 991px) {
+  header .main-header.sticky .header-flex .logo-box {
+    width: 160px;
+  }
+}
+header .main-header.sticky .header-flex .logo-box img {
+  max-width: 100%;
 }
 
 .sidebar-area {

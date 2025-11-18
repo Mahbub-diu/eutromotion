@@ -86,5 +86,16 @@
     });
 
     // Mobile menu ends
+
+    // header sticky start
+    $(window).scroll(function () {
+      var navbar = $('#main-header');
+      if ($(window).scrollTop() >= 150) {
+        navbar.addClass('sticky');
+      } else {
+        navbar.removeClass('sticky');
+      }
+    });
+    // header sticky ends
   });
 })(jQuery);
