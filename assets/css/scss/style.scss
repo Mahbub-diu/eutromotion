@@ -1282,3 +1282,175 @@ footer {
     }
   }
 }
+
+.about-banner-main {
+  height: 100vh;
+  max-height: 889px;
+  @media (max-width: 991px) {
+    height: 70vh;
+  }
+  @media (max-width: 767px) {
+    height: 60vh;
+  }
+}
+
+.mission-tab-main {
+  padding-top: 140px;
+  padding-bottom: 40px;
+
+  @include breakpoint(max-xxl) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  @include breakpoint(max-xl) {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  @include breakpoint(max-lg) {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  @include breakpoint(max-md) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .nav-tabs {
+    border: none;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    gap: 40px;
+    @include breakpoint(max-lg) {
+      gap: 25px;
+    }
+    @include breakpoint(max-md) {
+      gap: 15px;
+    }
+    li {
+      button {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border: none;
+        font-weight: 700;
+        color: #000;
+        font-family: $raleway;
+        text-transform: uppercase;
+        padding: 0;
+        position: relative;
+        &::before {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          bottom: -20px;
+          content: '';
+          background: transparent;
+        }
+        &.active {
+          &::before {
+            background: $logo-red;
+          }
+        }
+      }
+    }
+  }
+  .tab-pane {
+    padding: 60px 0;
+    @include breakpoint(max-xxl) {
+      padding: 50px 0;
+    }
+    @include breakpoint(max-xl) {
+      padding: 40px 0;
+    }
+    @include breakpoint(max-lg) {
+      padding: 30px 0;
+    }
+    @include breakpoint(max-md) {
+      padding: 25px 0;
+    }
+    h2 {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 400;
+      font-family: $raleway;
+      margin-bottom: 20px;
+      color: $black;
+      @include breakpoint(max-lg) {
+        font-size: 18px;
+      }
+    }
+    article {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400;
+      font-family: $raleway;
+      color: $black;
+      line-height: normal;
+      @include breakpoint(max-lg) {
+        font-size: 16px;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-family: $raleway;
+        color: $black;
+        line-height: normal;
+        @include breakpoint(max-lg) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.tab-image-grid {
+  padding-bottom: 100px;
+  @include breakpoint(max-xxl) {
+    padding-bottom: 80px;
+  }
+  @include breakpoint(max-xl) {
+    padding-bottom: 70px;
+  }
+  @include breakpoint(max-lg) {
+    padding-bottom: 60px;
+  }
+  @include breakpoint(max-md) {
+    padding-bottom: 50px;
+  }
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    @include breakpoint(max-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint(max-md) {
+      grid-template-columns: 1fr;
+    }
+    .single-grid {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transistion-four;
+        cursor: pointer;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
