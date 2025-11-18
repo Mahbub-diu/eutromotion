@@ -1,7 +1,7 @@
-@import "partials/colors";
-@import "partials/variable";
-@import "partials/mixins";
-@import "partials/common";
+@import 'partials/colors';
+@import 'partials/variable';
+@import 'partials/mixins';
+@import 'partials/common';
 body {
   margin: 0px auto;
   padding: 0;
@@ -104,6 +104,7 @@ header {
         .content-inner-box {
           max-width: 680px;
           margin: 0px auto;
+          text-align: center;
           @media (min-width: 992px) and (max-width: 1200px) {
             margin-top: 70px;
           }
@@ -212,7 +213,7 @@ header {
       left: 0;
       width: 100%;
       height: 100%;
-      content: "";
+      content: '';
       background: #0e0e0e;
       opacity: 0.45;
       @include transistion-four;
@@ -445,7 +446,7 @@ header {
     }
     @include breakpoint(max-md) {
       padding: 30px 0;
-      margin-left: 30px;
+      margin-left: 0px;
     }
     @include breakpoint(max-sm) {
       margin-left: 0;
@@ -471,31 +472,192 @@ header {
       color: $black;
       margin-bottom: 20px;
     }
+    .red-text {
+      color: #c60303;
+      font-size: 15px;
+      line-height: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
   }
 }
 
 .fourty-black-bg {
   background: #373737;
   height: 400px;
+
+  @include breakpoint(max-xl) {
+    height: 300px;
+  }
+  @include breakpoint(max-lg) {
+    height: 250px;
+  }
 }
 
 .fourty-bg {
   height: 815px;
+
+  @include breakpoint(max-xl) {
+    height: 650px;
+  }
+  @include breakpoint(max-lg) {
+    height: 600px;
+  }
+  @include breakpoint(max-md) {
+    height: 550px;
+  }
+  @include breakpoint(max-sm) {
+    height: 450px;
+  }
   .content-box {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     width: 90%;
     background: #dfdfdf;
     padding: 35px 35px 90px 35px;
     margin-top: -103px;
     position: relative;
     z-index: 1;
+    @include breakpoint(max-lg) {
+      gap: 25px;
+    }
     .left-box {
-      width: 350px;
+      width: 295px;
+
+      @include breakpoint(max-lg) {
+        width: 100%;
+        text-align: center;
+      }
+
+      .count {
+        .four {
+          font-size: 213px;
+          font-weight: 700;
+          font-family: $raleway;
+          line-height: 1;
+
+          @include breakpoint(max-xl) {
+            font-size: 170px;
+          }
+          @include breakpoint(max-lg) {
+            font-size: 150px;
+          }
+          @include breakpoint(max-md) {
+            font-size: 120px;
+          }
+          @include breakpoint(max-sm) {
+            font-size: 100px;
+          }
+        }
+        .dot {
+          background: $logo-red;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          top: 20px;
+          @include breakpoint(max-xl) {
+            width: 18px;
+            height: 18px;
+          }
+          @include breakpoint(max-lg) {
+            width: 15px;
+            height: 15px;
+          }
+          @include breakpoint(max-md) {
+            width: 12px;
+            height: 12px;
+          }
+          @include breakpoint(max-sm) {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+      .industry {
+        text-transform: uppercase;
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        font-family: $raleway;
+
+        @include breakpoint(max-xl) {
+          font-size: 25px;
+        }
+        @include breakpoint(max-lg) {
+          font-size: 22px;
+        }
+        @include breakpoint(max-md) {
+          font-size: 20px;
+        }
+        @include breakpoint(max-sm) {
+          font-size: 18px;
+        }
+      }
     }
     .right-box {
       flex: 1;
+      article {
+        h4 {
+          font-size: 25px;
+          font-weight: 400;
+          font-family: $raleway;
+          color: #4b4b4b;
+          line-height: normal;
+          margin-bottom: 0;
+          strong {
+            color: $logo-red;
+          }
+
+          @include breakpoint(max-xl) {
+            font-size: 22px;
+          }
+          @include breakpoint(max-lg) {
+            font-size: 20px;
+          }
+          @include breakpoint(max-md) {
+            font-size: 18px;
+          }
+          @include breakpoint(max-sm) {
+            font-size: 16px;
+          }
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.6;
+          font-family: $raleway;
+          color: #4b4b4b;
+
+          @include breakpoint(max-xl) {
+            font-size: 18px;
+          }
+          @include breakpoint(max-lg) {
+            font-size: 17px;
+          }
+          @include breakpoint(max-md) {
+            font-size: 16px;
+          }
+          @include breakpoint(max-sm) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.technology-skill-main {
+  p {
+    font-weight: 400 !important;
+    strong {
+      font-weight: 700 !important;
     }
   }
 }
