@@ -90,10 +90,13 @@
     // header sticky start
     $(window).scroll(function () {
       var navbar = $('#main-header');
+      var header = $('header');
       if ($(window).scrollTop() >= 150) {
         navbar.addClass('sticky');
+        header.addClass('fixed-header');
       } else {
         navbar.removeClass('sticky');
+        header.removeClass('fixed-header');
       }
     });
     // header sticky ends
