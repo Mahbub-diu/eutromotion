@@ -1530,3 +1530,52 @@ footer {
     }
   }
 }
+
+.about-gallary-main {
+  padding-top: 75px;
+  padding-bottom: 150px;
+  @include breakpoint(max-xxl) {
+    padding-bottom: 120px;
+  }
+  @include breakpoint(max-xl) {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(max-lg) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  @include breakpoint(max-md) {
+    padding: 50px 0;
+  }
+  .title-box {
+    border-bottom: 1px solid $black;
+    margin-bottom: 40px;
+    h2 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: $raleway;
+      font-weight: 800;
+      color: $logo-red;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+  .gallary-grid-parent {
+    width: 100%;
+    .single-grid {
+      width: calc(100% / 3);
+      padding: 0;
+      @include breakpoint(max-lg) {
+        width: calc(100% / 2);
+      }
+      @include breakpoint(max-sm) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}

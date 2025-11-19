@@ -100,5 +100,30 @@
       }
     });
     // header sticky ends
+
+    // about gallary start
+
+    $('.gallary-grid-parent').imagesLoaded(function () {
+      $('.gallary-grid-parent').masonry({
+        itemSelector: '.single-grid',
+        columnWidth: '.single-grid',
+        percentPosition: true,
+        gutter: 0,
+      });
+    });
+
+    $(window).on('resize', function () {
+      $('.gallary-grid-parent').masonry('layout');
+    });
+
+    $('.gallary-grid-parent').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true,
+      },
+      mainClass: 'mfp-fade',
+    });
+    // about gallary ends
   });
 })(jQuery);

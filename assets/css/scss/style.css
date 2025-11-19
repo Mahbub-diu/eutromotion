@@ -1786,4 +1786,65 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
     padding: 50px 35px;
     margin-top: -150px;
   }
+}
+
+.about-gallary-main {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+@media (max-width: 1399px) {
+  .about-gallary-main {
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-gallary-main {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .about-gallary-main {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .about-gallary-main {
+    padding: 50px 0;
+  }
+}
+.about-gallary-main .title-box {
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+}
+.about-gallary-main .title-box h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #c60303;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about-gallary-main .gallary-grid-parent {
+  width: 100%;
+}
+.about-gallary-main .gallary-grid-parent .single-grid {
+  width: 33.3333333333%;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .about-gallary-main .gallary-grid-parent .single-grid {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .about-gallary-main .gallary-grid-parent .single-grid {
+    width: 100%;
+  }
+}
+.about-gallary-main .gallary-grid-parent .single-grid img {
+  width: 100%;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
