@@ -1576,6 +1576,7 @@ footer {
 }
 
 .i-robot-main {
+  border-bottom: 1px solid #000;
   .irobot-flex-parent {
     display: flex;
     flex-wrap: wrap;
@@ -1583,6 +1584,16 @@ footer {
       flex-basis: 33%;
       background: $white;
       padding: 115px 85px 115px 100px;
+      @include breakpoint(max-xxl) {
+        padding: 80px 40px;
+      }
+      @include breakpoint(max-xl) {
+        padding: 60px 30px;
+      }
+      @include breakpoint(max-lg) {
+        padding: 50px 20px;
+        flex-basis: 100%;
+      }
       h1 {
         font-size: 20px;
         font-family: $raleway;
@@ -1593,6 +1604,10 @@ footer {
         padding-bottom: 20px;
         text-transform: uppercase;
         margin-bottom: 30px;
+        @include breakpoint(max-xl) {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
       }
       article {
         font-size: 15px;
@@ -1614,6 +1629,312 @@ footer {
       flex-basis: 67%;
       background: #f0f0f0;
       padding: 115px 85px 115px 40px;
+      @include breakpoint(max-xxl) {
+        padding: 80px 40px;
+      }
+      @include breakpoint(max-xl) {
+        padding: 60px 30px;
+      }
+      @include breakpoint(max-lg) {
+        padding: 50px 20px;
+        flex-basis: 100%;
+      }
+      .robot-grid-parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        @include breakpoint(max-xxl) {
+          grid-template-columns: 1fr 1fr;
+          gap: 50px;
+        }
+        @include breakpoint(max-xl) {
+          grid-template-columns: 1fr 1fr;
+          gap: 50px;
+        }
+        @include breakpoint(max-md) {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        @include breakpoint(max-sm) {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .single-grid {
+          .icon {
+            margin: 0px auto;
+            margin-bottom: 35px;
+            width: 50px;
+            @include breakpoint(max-md) {
+              margin-bottom: 20px;
+            }
+            img {
+              max-width: 100%;
+              object-fit: contain;
+            }
+          }
+          h4 {
+            text-transform: uppercase;
+            font-family: $raleway;
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+            text-align: center;
+            @include breakpoint(max-lg) {
+              font-size: 16px;
+            }
+            @include breakpoint(max-md) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.robotica-image-section {
+  padding-top: 80px;
+  @include breakpoint(max-lg) {
+    padding-top: 50px;
+  }
+  .image-box {
+    text-align: right;
+    img {
+      max-width: 100%;
+    }
+  }
+  .content-box {
+    max-width: 50%;
+    @include breakpoint(max-xxl) {
+      max-width: 70%;
+    }
+    @include breakpoint(max-lg) {
+      margin-top: 50px;
+      max-width: 100%;
+      margin-bottom: 50px;
+      padding: 0 20px;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 400;
+      font-family: $raleway;
+      line-height: normal;
+      margin-bottom: 15px;
+      color: #000000;
+      @include breakpoint(max-xxxl) {
+        br {
+          display: none;
+        }
+      }
+      @include breakpoint(max-lg) {
+        font-size: 18px;
+        br {
+          display: none;
+        }
+      }
+    }
+    article {
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $raleway;
+        line-height: normal;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.progetti-main {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background: #373737;
+
+  @include breakpoint(max-xl) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @include breakpoint(max-xl) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  @include breakpoint(max-lg) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include breakpoint(max-md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  h2 {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: $raleway;
+    margin-bottom: 75px;
+    @include breakpoint(max-xxl) {
+      margin-bottom: 60px;
+      font-size: 22px;
+    }
+    @include breakpoint(max-xl) {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+    @include breakpoint(max-lg) {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+    @include breakpoint(max-md) {
+      margin-bottom: 30px;
+    }
+  }
+  .image-box {
+    margin-bottom: 20px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #000;
+      opacity: 0.5;
+    }
+  }
+}
+
+.siamo-main {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  @include breakpoint(max-lg) {
+    padding: 50px 0;
+  }
+  .content-box {
+    width: 50%;
+    margin: 0px auto;
+    @include breakpoint(max-lg) {
+      width: 100%;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      font-family: $raleway;
+      line-height: normal;
+      color: #4b4b4b;
+      margin-bottom: 35px;
+      @include breakpoint(max-lg) {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        list-style-type: disc;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: $raleway;
+        line-height: normal;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.partners-main {
+  padding: 100px 0;
+  @include breakpoint(max-xxl) {
+    padding: 70px 0;
+  }
+  @include breakpoint(max-xl) {
+    padding: 60px 0;
+  }
+  @include breakpoint(max-lg) {
+    padding: 50px 0;
+  }
+  @include breakpoint(max-md) {
+    padding: 45px 0;
+  }
+  .title-box {
+    h4 {
+      font-size: 24px;
+      font-weight: 400;
+      font-family: $raleway;
+      line-height: normal;
+      margin-bottom: 20px;
+      color: #4b4b4b;
+      text-transform: capitalize;
+
+      @include breakpoint(max-xl) {
+        font-size: 22px;
+      }
+      @include breakpoint(max-lg) {
+        font-size: 20px;
+      }
+      @include breakpoint(max-md) {
+        font-size: 18px;
+      }
+    }
+  }
+  .content-box {
+    margin-bottom: 50px;
+    h5 {
+      font-size: 21px;
+      font-weight: 400;
+      font-family: $raleway;
+      line-height: normal;
+      margin-bottom: 20px;
+      color: #4b4b4b;
+
+      @include breakpoint(max-xl) {
+        font-size: 20px;
+      }
+      @include breakpoint(max-lg) {
+        font-size: 18px;
+      }
+      @include breakpoint(max-md) {
+        font-size: 16px;
+      }
+    }
+    article {
+      p {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: $raleway;
+        line-height: normal;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .partners-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    @include breakpoint(max-xl) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @include breakpoint(max-lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include breakpoint(max-sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .single-grid {
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
