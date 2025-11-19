@@ -1442,30 +1442,25 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
 
 .mission-tab-main {
   padding-top: 140px;
-  padding-bottom: 40px;
 }
 @media (max-width: 1399px) {
   .mission-tab-main {
     padding-top: 80px;
-    padding-bottom: 30px;
   }
 }
 @media (max-width: 1199px) {
   .mission-tab-main {
     padding-top: 70px;
-    padding-bottom: 30px;
   }
 }
 @media (max-width: 991px) {
   .mission-tab-main {
     padding-top: 60px;
-    padding-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
   .mission-tab-main {
     padding-top: 50px;
-    padding-bottom: 20px;
   }
 }
 .mission-tab-main .nav-tabs {
@@ -1847,4 +1842,45 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
 .about-gallary-main .gallary-grid-parent .single-grid img {
   width: 100%;
   display: block;
+}
+
+.i-robot-main .irobot-flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.i-robot-main .irobot-flex-parent .left-box {
+  flex-basis: 33%;
+  background: #fff;
+  padding: 115px 85px 115px 100px;
+}
+.i-robot-main .irobot-flex-parent .left-box h1 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #c60303;
+  line-height: normal;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.i-robot-main .irobot-flex-parent .left-box article {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+.i-robot-main .irobot-flex-parent .left-box article p {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 0;
+}
+.i-robot-main .irobot-flex-parent .right-box {
+  flex-basis: 67%;
+  background: #f0f0f0;
+  padding: 115px 85px 115px 40px;
 }/*# sourceMappingURL=style.css.map */
