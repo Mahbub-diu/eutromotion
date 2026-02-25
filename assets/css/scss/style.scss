@@ -127,7 +127,7 @@ header {
       }
       .mean-nav {
         background: transparent !important;
-        > ul {
+        ul {
           display: block !important;
           li {
             a {
@@ -1936,6 +1936,341 @@ footer {
       img {
         max-width: 100%;
         object-fit: contain;
+      }
+    }
+  }
+}
+
+.media-banner-main {
+  padding: 75px 0;
+  margin-bottom: 75px;
+  background: #f0f0f0;
+  @include breakpoint(max-xl) {
+    padding: 70px 0;
+    margin-bottom: 70px;
+  }
+  @include breakpoint(max-lg) {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+  @include breakpoint(max-md) {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  .title-box {
+    h2 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: $raleway;
+      font-weight: 800;
+      color: $logo-red;
+      text-align: center;
+    }
+  }
+}
+
+.blog-main {
+  padding-bottom: 80px;
+
+  @include breakpoint(max-xl) {
+    padding-bottom: 70px;
+  }
+  @include breakpoint(max-lg) {
+    padding-bottom: 60px;
+  }
+  @include breakpoint(max-md) {
+    padding-bottom: 50px;
+  }
+
+  .col-lg-4 {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid rgb(0 0 0 / 0.3);
+    height: 100%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+
+    .card-body {
+      padding: 10px;
+      .image-box {
+        height: 244px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        img {
+          transition: transform 1.5s 0s ease-out;
+          transform-origin: top left;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .content-box {
+        padding: 34px 20px;
+        .date {
+          font-size: 15px;
+          font-family: $raleway;
+          font-weight: 400;
+          line-height: 24px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+          color: $black;
+        }
+        h4 {
+          margin-bottom: 0;
+          a {
+            font-family: $raleway;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 25px;
+
+            color: $logo-red;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+          }
+        }
+        article {
+          margin-bottom: 40px;
+          p {
+            font-family: $raleway;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $black;
+          }
+        }
+        a {
+          font-size: 15px;
+          font-family: $raleway;
+          font-weight: 500;
+          line-height: 24px;
+          text-transform: lowercase;
+          color: $black;
+          transition: all 0.3s ease-out;
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+        }
+      }
+    }
+    &:hover {
+      border-color: #f7f7f7;
+      background: #f7f7f7;
+      .card-body {
+        .image-box {
+          img {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.breadcrumb-main {
+  padding: 25px 0;
+  nav {
+    ol {
+      margin-bottom: 0;
+
+      li {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $raleway;
+        text-transform: capitalize;
+        a {
+          color: $black;
+          font-family: $raleway;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 16px;
+        }
+
+        &.active {
+          font-weight: 600;
+        }
+      }
+
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: $black;
+      }
+    }
+  }
+}
+
+.news-details-main {
+  padding-top: 90px;
+  padding-bottom: 115px;
+
+  @include breakpoint(max-xxl) {
+    padding: 50px 0;
+  }
+
+  .details-content {
+    h2 {
+      color: $black;
+      font-family: $raleway;
+      font-size: 43px;
+      font-weight: 600;
+      line-height: 38px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      @include breakpoint(max-xxl) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    h4 {
+      color: $black;
+      font-family: $raleway;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 25px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      @include breakpoint(max-xxl) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    p {
+      color: $black;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: $raleway;
+      line-height: 24px;
+      margin-bottom: 30px;
+      @include breakpoint(max-xxl) {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 20px;
+
+        br {
+          display: none;
+        }
+      }
+      strong {
+        font-weight: 600;
+        font-family: $raleway;
+      }
+
+      a {
+        i {
+          color: $black;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    img {
+      margin-top: 39px;
+      max-width: 100%;
+      @include breakpoint(max-xxl) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .media-details-sidebar {
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    height: 100%;
+    @include breakpoint(max-md) {
+      padding-top: 50px;
+      padding-left: 0;
+      border: none;
+    }
+    .sidebar-contents {
+      h3 {
+        color: $black;
+        font-family: $raleway;
+        font-size: 22px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 3.3px;
+        text-transform: uppercase;
+        @include breakpoint(max-xxl) {
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .single-news {
+        margin-bottom: 30px;
+        @include breakpoint(max-xxl) {
+          margin-bottom: 20px;
+        }
+        h5 {
+          color: $black;
+          font-family: $raleway;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 18px;
+          margin-bottom: 3px;
+          transition: $transition-4-einout;
+          -webkit-transition: $transition-4-einout;
+          -moz-transition: $transition-4-einout;
+          -ms-transition: $transition-4-einout;
+          -o-transition: $transition-4-einout;
+          &:hover {
+            color: $logo-red;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: $black;
+          font-family: $raleway;
+          font-weight: 400;
+        }
+        a {
+          font-family: $raleway;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 18px;
+          color: $black;
+          transition: $transition-4-einout;
+          -webkit-transition: $transition-4-einout;
+          -moz-transition: $transition-4-einout;
+          -ms-transition: $transition-4-einout;
+          -o-transition: $transition-4-einout;
+
+          &:hover {
+            color: $logo-red;
+          }
+        }
+      }
+
+      &.archive-news {
+        margin-top: 110px;
+        @include breakpoint(max-xxl) {
+          margin-top: 50px;
+        }
       }
     }
   }
