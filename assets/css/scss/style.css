@@ -1080,6 +1080,7 @@ header.fixed-header .sidebar-area {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .assemblaggio-main .swiper .swiper-slide-active .assemblaggio-slide-inner {
   position: relative;
@@ -2620,4 +2621,211 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   .news-details-main .media-details-sidebar .sidebar-contents.archive-news {
     margin-top: 50px;
   }
+}
+
+.servizi-banner-main {
+  aspect-ratio: 2.16/1;
+}
+
+.servizi-tabs-main {
+  padding: 140px 0;
+  background: #fff;
+}
+@media (max-width: 1399px) {
+  .servizi-tabs-main {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .servizi-tabs-main {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 767px) {
+  .servizi-tabs-main {
+    padding: 50px 0;
+  }
+}
+.servizi-tabs-main .nav-tabs {
+  justify-content: center;
+  border-bottom: 1px solid #000;
+  -moz-column-gap: 39px;
+       column-gap: 39px;
+  margin-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main .nav-tabs {
+    row-gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .servizi-tabs-main .nav-tabs {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  .servizi-tabs-main .nav-tabs .nav-item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+}
+.servizi-tabs-main .nav-tabs .nav-item .nav-link {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0px auto;
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main .nav-tabs .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+.servizi-tabs-main .nav-tabs .nav-item .nav-link::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  content: "";
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main .nav-tabs .nav-item .nav-link::before {
+    height: 3px;
+  }
+}
+.servizi-tabs-main .nav-tabs .nav-item .nav-link.active::before {
+  background: #c60303;
+}
+.servizi-tabs-main .tab-content .tab-pane .tab-description article {
+  text-align: center;
+}
+.servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+    font-size: 16px;
+  }
+}
+.servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+@media (max-width: 1199px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+    font-size: 15px;
+  }
+}
+
+.competenze-main {
+  padding: 0;
+  padding-bottom: 140px;
+}
+@media (max-width: 1399px) {
+  .competenze-main {
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .competenze-main {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .competenze-main {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .competenze-main {
+    padding-bottom: 20px;
+  }
+}
+.competenze-main .content-box ul {
+  padding-left: 20px;
+}
+.competenze-main .content-box ul li {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+  list-style-type: disc;
+}
+.competenze-main .content-box ul li strong {
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .competenze-main .content-box ul li {
+    font-size: 15px;
+  }
+}
+
+.servizi-last-section {
+  aspect-ratio: 64/25;
 }/*# sourceMappingURL=style.css.map */

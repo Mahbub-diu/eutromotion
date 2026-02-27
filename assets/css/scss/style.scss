@@ -923,6 +923,7 @@ header {
           left: 0;
           width: 100%;
           height: 100%;
+          z-index: 1;
         }
       }
     }
@@ -2281,4 +2282,185 @@ footer {
       }
     }
   }
+}
+
+.servizi-banner-main {
+  aspect-ratio: 2.16 / 1;
+}
+
+.servizi-tabs-main {
+  padding: 140px 0;
+  background: $white;
+
+  @include breakpoint(max-xxl) {
+    padding: 120px 0;
+  }
+  @include breakpoint(max-xl) {
+    padding: 100px 0;
+  }
+  @include breakpoint(max-lg) {
+    padding: 70px 0;
+  }
+  @include breakpoint(max-md) {
+    padding: 50px 0;
+  }
+
+  .nav-tabs {
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    column-gap: 39px;
+    margin-bottom: 60px;
+
+    @include breakpoint(max-lg) {
+      row-gap: 10px;
+    }
+    @include breakpoint(max-md) {
+      border: none;
+    }
+    .nav-item {
+      @include breakpoint(max-md) {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #000;
+      }
+      .nav-link {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: #000;
+        font-family: $raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        position: relative;
+        padding-bottom: 14px;
+        margin: 0px auto;
+        @include breakpoint(max-lg) {
+          font-size: 14px;
+        }
+        &::before {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 6px;
+          background: transparent;
+          content: '';
+          transition: $transition-4-einout;
+          -webkit-transition: $transition-4-einout;
+          -moz-transition: $transition-4-einout;
+          -ms-transition: $transition-4-einout;
+          -o-transition: $transition-4-einout;
+          @include breakpoint(max-lg) {
+            height: 3px;
+          }
+        }
+        &.active {
+          &::before {
+            background: #c60303;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      .tab-description {
+        article {
+          text-align: center;
+          h3 {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: $raleway;
+            color: #000;
+            line-height: normal;
+            margin-bottom: 20px;
+
+            @include breakpoint(max-xl) {
+              font-size: 22px;
+            }
+            @include breakpoint(max-lg) {
+              font-size: 20px;
+            }
+            @include breakpoint(max-md) {
+              font-size: 18px;
+            }
+            @include breakpoint(max-sm) {
+              font-size: 16px;
+            }
+          }
+          p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+            font-family: $raleway;
+            color: #000;
+
+            @include breakpoint(max-xl) {
+              font-size: 18px;
+            }
+            @include breakpoint(max-lg) {
+              font-size: 17px;
+            }
+            @include breakpoint(max-md) {
+              font-size: 16px;
+            }
+            @include breakpoint(max-sm) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.competenze-main {
+  padding: 0;
+  padding-bottom: 140px;
+  @include breakpoint(max-xxl) {
+    padding-bottom: 120px;
+  }
+  @include breakpoint(max-xl) {
+    padding-bottom: 50px;
+  }
+  @include breakpoint(max-lg) {
+    padding-bottom: 30px;
+  }
+  @include breakpoint(max-md) {
+    padding-bottom: 20px;
+  }
+
+  .content-box {
+    ul {
+      padding-left: 20px;
+      li {
+        color: #000;
+        font-family: $raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+        list-style-type: disc;
+        strong {
+          font-weight: 700;
+        }
+
+        @include breakpoint(max-md) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.servizi-last-section {
+  aspect-ratio: 64 / 25;
 }
