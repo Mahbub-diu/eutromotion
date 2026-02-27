@@ -2317,13 +2317,13 @@ footer {
     @include breakpoint(max-md) {
       border: none;
     }
-    .nav-item {
+    li {
       @include breakpoint(max-md) {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid #000;
       }
-      .nav-link {
+      a {
         border-radius: 0;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
@@ -2341,6 +2341,7 @@ footer {
         position: relative;
         padding-bottom: 14px;
         margin: 0px auto;
+        display: block;
         @include breakpoint(max-lg) {
           font-size: 14px;
         }
@@ -2369,52 +2370,48 @@ footer {
       }
     }
   }
-  .tab-content {
-    .tab-pane {
-      .tab-description {
-        article {
-          text-align: center;
-          h3 {
-            font-size: 25px;
-            font-weight: 400;
-            font-family: $raleway;
-            color: #000;
-            line-height: normal;
-            margin-bottom: 20px;
+  .tab-description {
+    article {
+      text-align: center;
+      h3 {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: $raleway;
+        color: #000;
+        line-height: normal;
+        margin-bottom: 20px;
 
-            @include breakpoint(max-xl) {
-              font-size: 22px;
-            }
-            @include breakpoint(max-lg) {
-              font-size: 20px;
-            }
-            @include breakpoint(max-md) {
-              font-size: 18px;
-            }
-            @include breakpoint(max-sm) {
-              font-size: 16px;
-            }
-          }
-          p {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: normal;
-            font-family: $raleway;
-            color: #000;
+        @include breakpoint(max-xl) {
+          font-size: 22px;
+        }
+        @include breakpoint(max-lg) {
+          font-size: 20px;
+        }
+        @include breakpoint(max-md) {
+          font-size: 18px;
+        }
+        @include breakpoint(max-sm) {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        font-family: $raleway;
+        color: #000;
 
-            @include breakpoint(max-xl) {
-              font-size: 18px;
-            }
-            @include breakpoint(max-lg) {
-              font-size: 17px;
-            }
-            @include breakpoint(max-md) {
-              font-size: 16px;
-            }
-            @include breakpoint(max-sm) {
-              font-size: 15px;
-            }
-          }
+        @include breakpoint(max-xl) {
+          font-size: 18px;
+        }
+        @include breakpoint(max-lg) {
+          font-size: 17px;
+        }
+        @include breakpoint(max-md) {
+          font-size: 16px;
+        }
+        @include breakpoint(max-sm) {
+          font-size: 15px;
         }
       }
     }
@@ -2463,4 +2460,20 @@ footer {
 
 .servizi-last-section {
   aspect-ratio: 64 / 25;
+}
+
+.contact-robot-main {
+  .irobot-flex-parent {
+    .left-box {
+      h1 {
+        color: #212529;
+        font-family: $raleway;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: unset;
+      }
+    }
+  }
 }

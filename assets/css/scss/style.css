@@ -2669,13 +2669,13 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   }
 }
 @media (max-width: 767px) {
-  .servizi-tabs-main .nav-tabs .nav-item {
+  .servizi-tabs-main .nav-tabs li {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
   }
 }
-.servizi-tabs-main .nav-tabs .nav-item .nav-link {
+.servizi-tabs-main .nav-tabs li a {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2693,13 +2693,14 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   position: relative;
   padding-bottom: 14px;
   margin: 0px auto;
+  display: block;
 }
 @media (max-width: 991px) {
-  .servizi-tabs-main .nav-tabs .nav-item .nav-link {
+  .servizi-tabs-main .nav-tabs li a {
     font-size: 14px;
   }
 }
-.servizi-tabs-main .nav-tabs .nav-item .nav-link::before {
+.servizi-tabs-main .nav-tabs li a::before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2714,17 +2715,17 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   -o-transition: all 0.4s ease-in-out;
 }
 @media (max-width: 991px) {
-  .servizi-tabs-main .nav-tabs .nav-item .nav-link::before {
+  .servizi-tabs-main .nav-tabs li a::before {
     height: 3px;
   }
 }
-.servizi-tabs-main .nav-tabs .nav-item .nav-link.active::before {
+.servizi-tabs-main .nav-tabs li a.active::before {
   background: #c60303;
 }
-.servizi-tabs-main .tab-content .tab-pane .tab-description article {
+.servizi-tabs-main .tab-description article {
   text-align: center;
 }
-.servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+.servizi-tabs-main .tab-description article h3 {
   font-size: 25px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
@@ -2733,26 +2734,26 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   margin-bottom: 20px;
 }
 @media (max-width: 1199px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+  .servizi-tabs-main .tab-description article h3 {
     font-size: 22px;
   }
 }
 @media (max-width: 991px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+  .servizi-tabs-main .tab-description article h3 {
     font-size: 20px;
   }
 }
 @media (max-width: 767px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+  .servizi-tabs-main .tab-description article h3 {
     font-size: 18px;
   }
 }
 @media (max-width: 575px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article h3 {
+  .servizi-tabs-main .tab-description article h3 {
     font-size: 16px;
   }
 }
-.servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+.servizi-tabs-main .tab-description article p {
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
@@ -2760,22 +2761,22 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
   color: #000;
 }
 @media (max-width: 1199px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+  .servizi-tabs-main .tab-description article p {
     font-size: 18px;
   }
 }
 @media (max-width: 991px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+  .servizi-tabs-main .tab-description article p {
     font-size: 17px;
   }
 }
 @media (max-width: 767px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+  .servizi-tabs-main .tab-description article p {
     font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  .servizi-tabs-main .tab-content .tab-pane .tab-description article p {
+  .servizi-tabs-main .tab-description article p {
     font-size: 15px;
   }
 }
@@ -2828,4 +2829,14 @@ footer .main-footer .footer-flex .single-box .footer-last-box ul li a {
 
 .servizi-last-section {
   aspect-ratio: 64/25;
+}
+
+.contact-robot-main .irobot-flex-parent .left-box h1 {
+  color: #212529;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: unset;
 }/*# sourceMappingURL=style.css.map */
