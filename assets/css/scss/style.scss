@@ -2289,20 +2289,20 @@ footer {
 }
 
 .servizi-tabs-main {
-  padding: 140px 0;
+  padding-top: 140px;
   background: $white;
 
   @include breakpoint(max-xxl) {
-    padding: 120px 0;
+    padding-top: 120px;
   }
   @include breakpoint(max-xl) {
-    padding: 100px 0;
+    padding-top: 100px;
   }
   @include breakpoint(max-lg) {
-    padding: 70px 0;
+    padding-top: 70px;
   }
   @include breakpoint(max-md) {
-    padding: 50px 0;
+    padding-top: 50px;
   }
 
   .nav-tabs {
@@ -2370,7 +2370,38 @@ footer {
       }
     }
   }
+}
+
+.competenze-main {
+  padding: 0;
+  padding-bottom: 140px;
+  @include breakpoint(max-xxl) {
+    padding-bottom: 120px;
+  }
+  @include breakpoint(max-xl) {
+    padding-bottom: 50px;
+  }
+  @include breakpoint(max-lg) {
+    padding-bottom: 30px;
+  }
+  @include breakpoint(max-md) {
+    padding-bottom: 20px;
+  }
+
   .tab-description {
+    padding-bottom: 140px;
+    @include breakpoint(max-xxl) {
+      padding-bottom: 120px;
+    }
+    @include breakpoint(max-xl) {
+      padding-bottom: 100px;
+    }
+    @include breakpoint(max-lg) {
+      padding-bottom: 70px;
+    }
+    @include breakpoint(max-md) {
+      padding-bottom: 50px;
+    }
     article {
       text-align: center;
       h3 {
@@ -2416,24 +2447,6 @@ footer {
       }
     }
   }
-}
-
-.competenze-main {
-  padding: 0;
-  padding-bottom: 140px;
-  @include breakpoint(max-xxl) {
-    padding-bottom: 120px;
-  }
-  @include breakpoint(max-xl) {
-    padding-bottom: 50px;
-  }
-  @include breakpoint(max-lg) {
-    padding-bottom: 30px;
-  }
-  @include breakpoint(max-md) {
-    padding-bottom: 20px;
-  }
-
   .content-box {
     ul {
       padding-left: 20px;
